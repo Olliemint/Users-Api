@@ -1,0 +1,46 @@
+<div class="container my-5">
+    <h1 class="text-center">Edit User</h1>
+
+ <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+    <table class="table">
+        
+        <tr class="py-1">
+            <td>Name</td>
+            <td>
+                <input type="text" formControlName="name">
+            </td>
+        </tr>
+        <br>
+        <tr class="my-1">
+            <td>Email</td>
+            <td>
+                <input type="email" formControlName="email">
+            </td>
+        </tr>
+        <tr class="py-1">
+            <td>Phone number</td>
+            <td>
+                <input type="text" formControlName="phone">
+            </td>
+        </tr>
+        <tr class="py-1">
+            <td>Address</td>
+            <td>
+                <input type="text" formControlName="address">
+            </td>
+        </tr>
+        <tr class="py-1">
+            <td>Message</td>
+            <td>
+                <input type="text" formControlName="message">
+            </td>
+        </tr>
+        <tr class="mt-1">
+            
+            <td colspan="2">
+                <button class="btn btn-outline-success" type="submit" name="submit">Update user</button>
+            </td>
+        </tr>
+    </table>
+ </form>
+</div>
